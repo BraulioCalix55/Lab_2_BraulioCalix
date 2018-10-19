@@ -11,21 +11,21 @@ package lab2_brauliocalix;
  */
 public class Aviones {
 
-    private int numode;
+    private String numode;
     private String codi;
-    private int fabrica;
-    private int ingreso;
-    private int cantidad;
-    private int pesomax;
-    private int horasvuelo;
-    private int numotores;
+    private String fabrica;
+    private String ingreso;
+    private String cantidad;
+    private String pesomax;
+    private String horasvuelo;
+    private String numotores;
     private String estado;
     private String nombre;
 
     public Aviones() {
     }
 
-    public Aviones(int numode, String codi, int fabrica, int ingreso, int cantidad, int pesomax, int horasvuelo, int numotores, String estado, String nombre) {
+    public Aviones(String numode, String codi, String fabrica, String ingreso, String cantidad, String pesomax, String horasvuelo, String numotores, String estado, String nombre) {
         this.numode = numode;
         this.codi = codi;
         this.fabrica = fabrica;
@@ -38,11 +38,11 @@ public class Aviones {
         this.nombre = nombre;
     }
 
-    public int getNumode() {
+    public String getNumode() {
         return numode;
     }
 
-    public void setNumode(int numode) {
+    public void setNumode(String numode) {
         this.numode = numode;
     }
 
@@ -54,51 +54,51 @@ public class Aviones {
         this.codi = codi;
     }
 
-    public int getFabrica() {
+    public String getFabrica() {
         return fabrica;
     }
 
-    public void setFabrica(int fabrica) {
+    public void setFabrica(String fabrica) {
         this.fabrica = fabrica;
     }
 
-    public int getIngreso() {
+    public String getIngreso() {
         return ingreso;
     }
 
-    public void setIngreso(int ingreso) {
+    public void setIngreso(String ingreso) {
         this.ingreso = ingreso;
     }
 
-    public int getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
 
-    public int getPesomax() {
+    public String getPesomax() {
         return pesomax;
     }
 
-    public void setPesomax(int pesomax) {
+    public void setPesomax(String pesomax) {
         this.pesomax = pesomax;
     }
 
-    public int getHorasvuelo() {
+    public String getHorasvuelo() {
         return horasvuelo;
     }
 
-    public void setHorasvuelo(int horasvuelo) {
+    public void setHorasvuelo(String horasvuelo) {
         this.horasvuelo = horasvuelo;
     }
 
-    public int getNumotores() {
+    public String getNumotores() {
         return numotores;
     }
 
-    public void setNumotores(int numotores) {
+    public void setNumotores(String numotores) {
         this.numotores = numotores;
     }
 
@@ -117,6 +117,8 @@ public class Aviones {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    
 
     @Override
     public String toString() {
