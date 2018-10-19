@@ -181,7 +181,7 @@ public class Lab2_BraulioCalix {
                     System.out.println("ingrese el valor del avion al que le quiere cambiar el estado");
                     int puesto=lea.nextInt();
                     String estado=((Aviones)aviones.get(puesto)).getEstado();
-                    int cambio=lea.nextInt();
+                    int cambio;
                     if (estado.equals("estacionado")) {
                         System.out.println("quiere cambiar el estado del avion de estacionado a en espera?1)si2)no");
                         cambio=lea.nextInt();
@@ -206,10 +206,11 @@ public class Lab2_BraulioCalix {
                         cambio=lea.nextInt();
                         if (listo>5) {
                             System.out.println("no se puede poner listo porque supera el limite");
-                        }
+                        }else{
                         if (cambio==1) {
                             ((Aviones)aviones.get(puesto)).setEstado("en vuelo");
                             listo--;
+                        }
                         }
                     }else if(estado.equals("en vuelo")){
                         System.out.println("quiere cambiar el estado del avion de en vuelo a estacionado1)si2)no");
